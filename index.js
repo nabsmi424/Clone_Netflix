@@ -8,10 +8,10 @@ const apiPaths = {
     `${apiEndpoint}/discover/movie?api_key=${apikey}&with_genres=${id}`,
   fetchTrending: `${apiEndpoint}/trending/all/day?api_key=${apikey}&language=en-US`,
   searchOnYoutube: (query) =>
-  `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&key=AIzaSyBk03HDHR6cUbSALFeGVvhR8zicasnaWL0`, // Replace with your actual YouTube API key
+  `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&key=AIzaSyBk03HDHR6cUbSALFeGVvhR8zicasnaWL0`, //  YouTube API key
 };
 
-// Boot up for app
+// Boot up 
 function init() {
   fetchTrendingMovies();
   fetchAndbuildAllSection();
